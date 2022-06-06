@@ -5,25 +5,64 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles-challenge.css">
     <title>Forms Challenge</title>
 </head>
 <body>
-
+<h1>Contact Us</h1>
 <form action="">
-    <section>
+    <section class="personal-info">
         <h2>How can we help you?</h2>
         <label for="username">Your name</label>
-        <input type="text" name="user-name" id="username">
+        <input type="text" name="user-name" id="username" required />
 
         <label for="useremail">Youer e-mail address</label>
-        <input type="email" name="user-email" id="useremail">
+        <input type="email" name="user-email" id="useremail" />
 
         <label for="userphone">Your phone number</label>
-        <input type="tel" name="user-phone" id="userphone">
+        <input type="tel" name="user-phone" id="userphone" />
 
         <label for="message">Your message</label>
         <textarea name="message" id="message"></textarea>
 
+        <label for="contactSource">How did you find us?</label>
+        <select name="contact-source" id="contactSource" >
+            <option>Web search</option>
+            <option>Social Media</option>
+            <option>Other</option>
+        </select>
+
+    </section>
+
+    <section>
+        <h2>How should we contact you?</h2>
+        <div>
+            <input type="radio" name="reply-type" id="phonecall" required />
+            <label for="phonecall">Call me</label>
+        </div>
+        <div>
+            <input type="radio" name="reply-type" id="emailcontact" required />
+            <label for="emailcontact">Send me an email</label>
+        </div>
+        <div>
+            <input type="radio" name="reply-type" id="none" required />
+            <label for="none">Dont' reply</label>
+        </div>
+        <div>
+            <input type="checkbox" name="accept-terms" id="acceptterms" />
+            <label for="acceptterms">Accept terms</label>
+        </div>
+    </section>
+
+
+    <section id="buttons">
+        <div>
+            <button type="reset">Clear</button>
+            <button type="submit">Submit</button>
+        </div>
     </section>
 </form>
 </body>

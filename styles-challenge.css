@@ -1,0 +1,120 @@
+html{
+    box-sizing: border-box;
+    height: 100vh;
+    font-family: 'Zilla Slab', serif;
+    font-size: 16px;
+    color: rgb(25,0,80);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(60deg, rgb(227,255,254), rgb(212, 245, 242));
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+form {
+    width: 20rem;
+    margin: 2rem auto;
+    background: linear-gradient(90deg, rgb(227,255,254), rgba(191, 245, 240, 0.46));
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 10px 8px 12px rgba(0,0,0,0.3);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+h2{
+    margin: 0 0 0.5rem 0;
+}
+
+input{
+    padding: 0.3rem;
+    font-family: inherit;
+    font-size: inherit;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 5px;
+    color: inherit;
+    margin: 3px auto 8px auto;
+    box-sizing: border-box;
+}
+.personal-info input{
+    width: 100%;
+}
+
+input:focus,
+textarea:focus,
+select:focus
+{
+    outline: none;
+}
+
+textarea{
+    resize: vertical;
+    height: 5rem;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 5px;
+    color: inherit;
+    margin: 3px auto 8px auto;
+    width: 100%;
+}
+
+select{
+    padding: 0.3rem;
+    font: inherit;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 5px;
+    color: inherit;
+    margin: 3px auto 8px auto;
+    width: 100%;
+}
+
+#acceptterms{
+    margin-top: 15px;
+}
+
+#buttons{
+    justify-content: left;
+    align-items: end;
+    margin-bottom: 0.5rem;
+}
+
+button{
+    padding: 5px 16px;
+    border-radius: 5px;
+    border: 1px solid rgb(25,0,80);
+    font-family: inherit;
+    font-weight: 700;
+}
+
+
+
+button[type=submit]{
+    background-color: rgb(25,0,80);
+    color: white;
+}
+
+button[type=reset]{
+    color:  rgb(25,0,80);
+    background: rgba(191, 245, 240, 0.1);
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button[type=submit]:hover{
+    background-color: rgba(25, 0, 80, 0.73)
+}
+
+button[type=reset]:hover{
+    background-color: rgb(186, 248, 243)
+}
